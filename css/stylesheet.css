@@ -10,3 +10,7 @@ nav {
     text-align: center;
     background-color: pink;
 }
+
+.fontchange {
+    font-family: 'Montserrat', sans-serif;
+}
