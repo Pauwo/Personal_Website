@@ -5,3 +5,8 @@ body {
 h1 {
     color: #00008b;
 }
+
+nav {
+    text-align: center;
+    background-color: pink;
+}
