@@ -9,6 +9,7 @@ h1 {
 .headfoot {
     text-align: center;
     background-color: pink;
+    margin-bottom: 20px;
 }
 
 .fontchange {
@@ -17,6 +18,12 @@ h1 {
 
 nav {
     padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-item {
+    padding: 5px;
 }
 
 .container {
