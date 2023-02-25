@@ -6,11 +6,15 @@ h1 {
     color: #00008b;
 }
 
-nav {
+.headfoot {
     text-align: center;
     background-color: pink;
 }
 
 .fontchange {
     font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    padding-bottom: 5px;
 }
