@@ -25,9 +25,7 @@ nav {
     padding: 5px;
 }
 
-.container {
-    padding-bottom: 25px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+li {
+    list-style-type: none;
+    margin: 10px;
 }
