@@ -21,7 +21,7 @@ nav {
     justify-content: center;
 }
 
-.middle-section {
+.middle-div {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
 }
@@ -32,14 +32,14 @@ li {
 }
 
 @media (min-width: 600px) {
-    section {
+    .coursediv, .middle-div {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 15px;
     }
-    #a-order {order: 1;}
-    #b-order {order: 3;}
-    #c-order {order: 2;}
+    .a-order {order: 1;}
+    .b-order {order: 3;}
+    .c-order {order: 2;}
 
     li {
         display: inline-block;
