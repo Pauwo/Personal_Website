@@ -21,11 +21,12 @@ nav {
     justify-content: center;
 }
 
-.flex-item {
-    padding: 5px;
+.middle-section {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
 }
 
 li {
     list-style-type: none;
-    margin: 10px;
+    padding-bottom: 10px;
 }
