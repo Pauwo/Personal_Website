@@ -30,3 +30,14 @@ li {
     list-style-type: none;
     padding-bottom: 10px;
 }
+
+@media (min-width: 600px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 15px;
+    }
+    #a-order {order: 1;}
+    #b-order {order: 3;}
+    #c-order {order: 2;}
+}
