@@ -40,4 +40,9 @@ li {
     #a-order {order: 1;}
     #b-order {order: 3;}
     #c-order {order: 2;}
+
+    li {
+        display: inline-block;
+        padding-right: 10px;
+    }
 }
