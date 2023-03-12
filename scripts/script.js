@@ -3,3 +3,10 @@ const courseList = {
     name: ['Scripting For IT', 'Fundamental Web Technologies', 'Database Systems'],
     program: 'CIT',
 }
+
+let user = "";
+do{
+    user = prompt("Enter a 4 digit course code: ");
+}
+while(isNaN(user) || (user.length != 4));
+alert ("Hello")
