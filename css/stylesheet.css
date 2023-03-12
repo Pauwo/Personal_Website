@@ -21,6 +21,10 @@ nav {
     justify-content: center;
 }
 
+ul {
+    margin-bottom: 0px;
+}
+
 .middle-div {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
@@ -28,7 +32,7 @@ nav {
 
 li {
     list-style-type: none;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 @media (min-width: 600px) {
