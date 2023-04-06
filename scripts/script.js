@@ -30,14 +30,22 @@ if (found == false) {
 }
 
 const courseDate = document.querySelector(".b-order")
+const courseCode = document.querySelectorAll(".a-order")
 function createCourseArray() {
     const courseArray = [];
-    const date_of_course = courseDate.textContent;
-    for (let item of courseList) {
-            courseArray.push({code: `${item.code} - ${item.name}`, date: date_of_course})
+    for (let item of courseCode) {
+            courseArray.push({code: item.textContent, date: courseDate.textContent})
     }
     console.log(courseArray);
     return courseArray
 }
 
 const newCourseArray = createCourseArray();
+function findCourse(courseList) {
+    for (let item of courseList) {
+        if (item.code.includes(user)) {
+            console.log(courseCode)
+        }
+    }
+}
+findCourse(newCourseArray);
