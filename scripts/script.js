@@ -28,3 +28,16 @@ if (found == false) {
         }
     }
 }
+
+const courseDate = document.querySelector(".b-order")
+function createCourseArray() {
+    const courseArray = [];
+    const date_of_course = courseDate.textContent;
+    for (let item of courseList) {
+            courseArray.push({code: `${item.code} - ${item.name}`, date: date_of_course})
+    }
+    console.log(courseArray);
+    return courseArray
+}
+
+const newCourseArray = createCourseArray();
