@@ -36,21 +36,23 @@ function createCourseArray() {
     for (let item of courseCode) {
             courseArray.push({code: item.textContent, date: courseDate.textContent})
     }
-    console.log(courseArray);
     return courseArray
 }
 
-const newCourseArray = createCourseArray();
 function findCourse(courseList) {
     let user = "";
     do{
         user = prompt("Enter a 4 digit course code: ");
     }
     while(isNaN(user) || (user.length != 4));
+    index = 0
     for (let item of courseList) {
+
         if (item.code.includes(user)) {
-            console.log(courseCode)
+            const course = document.querySelectorAll(".courses")[index]
+            course.style.backgroundColor = "green"
         }
+        index += 1
     }
 }
-findCourse(newCourseArray);
+findCourse(createCourseArray());
