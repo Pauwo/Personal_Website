@@ -46,13 +46,41 @@ function findCourse(courseList) {
     }
     while(isNaN(user) || (user.length != 4));
     index = 0
+    found = false
     for (let item of courseList) {
 
         if (item.code.includes(user)) {
             const course = document.querySelectorAll(".courses")[index]
             course.style.backgroundColor = "green"
+            found = true
         }
         index += 1
+    }
+    if (found === false) {
+        const mainElement = document.querySelector("main")
+
+        const newdiv = document.createElement("div")
+        newdiv.classList.add("coursediv")
+        newdiv.style.borderTop = "2px solid gray"
+        mainElement.appendChild(newdiv)
+
+        const newp = document.createElement("p")
+        newp.classList.add("a-order")
+        newdiv.appendChild(newp)
+
+        const newa = document.createElement("a")
+        newa.textContent = user
+        newp.appendChild(newa)
+
+        const newparaB = document.createElement("p")
+        newparaB.textContent = courseDate.textContent
+        newparaB.classList.add("b-order")
+        newdiv.appendChild(newparaB)
+
+        const newparaC = document.createElement("p")
+        newparaC.textContent = "N/A"
+        newparaC.classList.add("c-order")
+        newdiv.appendChild(newparaC)
     }
 }
 findCourse(createCourseArray());
